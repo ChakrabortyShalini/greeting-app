@@ -29,5 +29,5 @@ You can view the greeting live here: [https://ChakrabortyShalini/github.io/greet
 Good evening
 
 ## 📚 Technologies
-
+- HTML 
 - JavaScript (ES6+)
