@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Time-Based Greeting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="greeting">Loading greeting...</h1>
+
+  <script>
+    const currentHour = new Date().getHours();
+    let greeting;
+    if (currentHour < 12) {
+      greeting = "Good morning";
+    } else if (currentHour < 18) {
+      greeting = "Good afternoon";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("greeting").textContent = greeting;
+  </script>
+</body>
+</html>
